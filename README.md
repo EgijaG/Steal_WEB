@@ -1,11 +1,11 @@
-# steal-web
+# Steal Web page
 
 > School project for e-commerce systems, website as an e-shop for artists
 
 ## Build Setup
 
-``` bash
-# install dependencies
+```bash or CMD
+# Run in the project folder to install dependencies
 npm install
 
 # serve with hot reload at localhost:8080
