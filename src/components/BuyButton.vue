@@ -10,7 +10,7 @@ export default {
 
 <template>
   <button @click="count++">
-    You clicked me {{ count }} times.
+    {{ count }} $
   </button>
 </template>
 
@@ -22,6 +22,6 @@ button {
   border-radius: 4px;
   border: 0.5px solid #2D5354;
   font-family: 'Merriweather Sans', sans-serif;
-  
+  font-size: 20px;
 }
 </style>

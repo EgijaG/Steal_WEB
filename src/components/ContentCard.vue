@@ -14,7 +14,7 @@ export default {
 <template>
   <div id="card">
     <img src="../assets/img/first.jpg" alt="">
-    <h2>{{title}}</h2>
+    <h3>{{title}}</h3>
     <p>{{description}}</p>
     <BuyButton />
   </div>
@@ -23,15 +23,22 @@ export default {
 <style>
 #card {
   display: inline-block;
-  padding: 10px;
+  padding: 20px 5px;
   background-color: #ABCED2;
   border-radius: 4px;
-  border: 0.5px solid #000;
   max-width: 25%;
   margin: 20px 10px;
+  filter: drop-shadow(10px 5px 10px grey);
 }
 
 img {
   max-width: 80%;
+  border-radius: 4px;
+  margin-top: 5%;
+}
+
+p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
 }
 </style>
