@@ -22,6 +22,6 @@ button {
   border-radius: 4px;
   border: 0.5px solid #2D5354;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 </style>
