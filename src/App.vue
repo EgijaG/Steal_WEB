@@ -1,47 +1,61 @@
+
+
+<script>
+import BuyButton from './components/BuyButton.vue';
+import ContentCard from './components/ContentCard.vue';
+export default {
+  name: 'app',
+  components: {
+    ContentCard
+  },
+  data() {
+    return {
+      msg: 'Hello world! This is a fantastic day!',
+      script: 'This is lorem ipsum'
+    }
+
+  }
+
+}
+</script>
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header></header>
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <h3>{{script}}</h3>
+    <ContentCard />
+    <ContentCard />
+    <ContentCard />
+    <ContentCard />
+    <ContentCard />
+    <ContentCard />
+    <footer></footer>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
-</script>
-
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  flex: 1;
 }
 
-h1, h2 {
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
   font-weight: normal;
+  font-size: 64px;
+}
+
+h3 {
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 ul {
