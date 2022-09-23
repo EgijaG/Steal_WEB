@@ -24,7 +24,7 @@ export default {
 <template>
   <div id="app">
     <PageHeader />
-    <div v-for="p in products" class="container">
+    <div v-for="p in products" class="cards">
       <ContentCard :title="p.name" :description="p.description" :price="p.price" />
     </div>
 
@@ -46,9 +46,10 @@ export default {
   flex: 1;
 }
 
-.container {
-  display: flex;
-  
+.cards {
+  display: inline;
+  max-width: 25%;
+
 }
 
 h1,

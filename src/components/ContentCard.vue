@@ -1,6 +1,6 @@
 <script>
 import BuyButton from './BuyButton.vue';
-import productData from '../data/products.json';
+
 export default {
   components: { BuyButton },
   props: {
@@ -10,13 +10,13 @@ export default {
   },
   data() {
     return {
-      products: productData,
+
     }
   }
 }
 </script>
 
-<template>
+<template >
   <div id="card">
     <img src="../assets/img/first.jpg" alt="">
     <h3>{{title}}</h3>
