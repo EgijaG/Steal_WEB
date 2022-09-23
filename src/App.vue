@@ -5,6 +5,7 @@ import BuyButton from './components/BuyButton.vue';
 import ContentCard from './components/ContentCard.vue';
 import PageHeader from './components/PageHeader.vue';
 import PageFooter from './components/PageFooter.vue';
+import prodData from './data/products.json';
 export default {
   name: 'app',
   components: {
@@ -12,10 +13,11 @@ export default {
     PageHeader,
     PageFooter
 },
+
   data() {
     return {
-      msg: 'Hello world! This is a fantastic day!',
-      script: 'This is lorem ipsum'
+      products: prodData,
+
     }
 
   }
@@ -25,14 +27,9 @@ export default {
 <template>
   <div id="app">
     <PageHeader />
-    <h1>{{ msg }}</h1>
-    <h3>{{script}}</h3>,
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
+    <div v-for="p in products" class="cards">
+      <ContentCard :title="p.name" :description="p.description" :price="p.price" />
+    </div>
     <PageFooter />
   </div>
 </template>
@@ -47,7 +44,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 120px;
+  margin-top: 60px;
   flex: 1;
   padding-bottom: 40px;
   position: relative;
@@ -55,6 +52,12 @@ export default {
 
 body {
   margin:0;
+}
+
+.cards {
+  display: inline;
+  max-width: 25%;
+
 }
 
 h1,
