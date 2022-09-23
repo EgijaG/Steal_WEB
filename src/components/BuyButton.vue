@@ -24,7 +24,7 @@ button {
   padding: 10px;
   border-radius: 4px;
   border: 0.5px solid #2D5354;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Allerta', sans-serif;
   font-size: 15px;
 }
 </style>
