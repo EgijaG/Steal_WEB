@@ -4,11 +4,13 @@
 import BuyButton from './components/BuyButton.vue';
 import ContentCard from './components/ContentCard.vue';
 import PageHeader from './components/PageHeader.vue';
+import PageFooter from './components/PageFooter.vue';
 export default {
   name: 'app',
   components: {
     ContentCard,
-    PageHeader
+    PageHeader,
+    PageFooter
 },
   data() {
     return {
@@ -24,14 +26,14 @@ export default {
   <div id="app">
     <PageHeader />
     <h1>{{ msg }}</h1>
-    <h3>{{script}}</h3>
+    <h3>{{script}}</h3>,
     <ContentCard />
     <ContentCard />
     <ContentCard />
     <ContentCard />
     <ContentCard />
     <ContentCard />
-    <footer></footer>
+    <PageFooter />
   </div>
 </template>
 
@@ -45,8 +47,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 120px;
   flex: 1;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+body {
+  margin:0;
 }
 
 h1,
