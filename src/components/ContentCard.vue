@@ -1,11 +1,16 @@
 <script>
 import BuyButton from './BuyButton.vue';
+import productData from '../data/products.json';
 export default {
   components: { BuyButton },
+  props: {
+    title: String,
+    description: String,
+    price: Number,
+  },
   data() {
     return {
-      title: 'Nudes',
-      description: 'Loti good kvaliti'
+      products: productData,
     }
   }
 }
@@ -16,7 +21,7 @@ export default {
     <img src="../assets/img/first.jpg" alt="">
     <h3>{{title}}</h3>
     <p>{{description}}</p>
-    <BuyButton />
+    <BuyButton :displayPrice="price" />
   </div>
 </template>
 

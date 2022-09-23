@@ -4,16 +4,17 @@
 import BuyButton from './components/BuyButton.vue';
 import ContentCard from './components/ContentCard.vue';
 import PageHeader from './components/PageHeader.vue';
+import prodData from './data/products.json';
 export default {
   name: 'app',
   components: {
     ContentCard,
     PageHeader
-},
+  },
   data() {
     return {
-      msg: 'Hello world! This is a fantastic day!',
-      script: 'This is lorem ipsum'
+      products: prodData,
+
     }
 
   }
@@ -23,14 +24,10 @@ export default {
 <template>
   <div id="app">
     <PageHeader />
-    <h1>{{ msg }}</h1>
-    <h3>{{script}}</h3>
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
-    <ContentCard />
+    <div v-for="p in products" class="container">
+      <ContentCard :title="p.name" :description="p.description" :price="p.price" />
+    </div>
+
     <footer></footer>
   </div>
 </template>
@@ -47,6 +44,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   flex: 1;
+}
+
+.container {
+  display: flex;
+  
 }
 
 h1,

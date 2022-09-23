@@ -1,8 +1,11 @@
 <script>
 export default {
+  props: {
+    displayPrice: Number,
+  },
   data() {
     return {
-      count: 0
+
     }
   }
 }
@@ -10,7 +13,7 @@ export default {
 
 <template>
   <button @click="count++">
-    {{ count }} $
+    {{ displayPrice }} $
   </button>
 </template>
 
