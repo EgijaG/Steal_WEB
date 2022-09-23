@@ -37,9 +37,12 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap%27);
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap%27);
+
 
 #app {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Allerta', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -62,13 +65,13 @@ body {
 
 h1,
 h2 {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Courier Prime', monospace;
   font-weight: normal;
   font-size: 64px;
 }
 
 h3 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Allerta', sans-serif;
 }
 
 ul {
