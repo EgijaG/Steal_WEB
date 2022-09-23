@@ -7,6 +7,7 @@ export default {
     title: String,
     description: String,
     price: Number,
+    category: String
   },
   data() {
     return {
