@@ -44,7 +44,7 @@ img {
 }
 
 p {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Courier Prime', monospace;
   font-size: 24px;
 }
 </style>
