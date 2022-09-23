@@ -3,11 +3,13 @@
 <script>
 import BuyButton from './components/BuyButton.vue';
 import ContentCard from './components/ContentCard.vue';
+import PageHeader from './components/PageHeader.vue';
 export default {
   name: 'app',
   components: {
-    ContentCard
-  },
+    ContentCard,
+    PageHeader
+},
   data() {
     return {
       msg: 'Hello world! This is a fantastic day!',
@@ -20,7 +22,7 @@ export default {
 </script>
 <template>
   <div id="app">
-    <header></header>
+    <PageHeader />
     <h1>{{ msg }}</h1>
     <h3>{{script}}</h3>
     <ContentCard />
